@@ -15,5 +15,5 @@ resource "aws_launch_template" "aws-launch-template" {
 
   vpc_security_group_ids = [aws_security_group.allow-sec1.id]
 
-  user_data = filebase64("${path.module}/example.sh")
+  user_data = filebase64("user_data.sh")
 }
