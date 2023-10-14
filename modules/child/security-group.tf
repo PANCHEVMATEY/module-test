@@ -1,4 +1,4 @@
-# Create a Security Group -----------------------------------------------------
+# Create a Security Group
 resource "aws_security_group" "allow-http" {
   name        = "allow_http"
   description = "Allow HTTP inbound traffic"
@@ -25,7 +25,7 @@ resource "aws_security_group" "allow-http" {
   }
 }
 
-# Create a Security Group -----------------------------------------------------
+# Create a Security Group
 resource "aws_security_group" "allow-sec1" {
   name        = "allow_sec1"
   description = "Allow HTTP inbound traffic to load"

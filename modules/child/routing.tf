@@ -1,4 +1,4 @@
-# Create 4 Routing Tables -----------------------------------------------------
+# Create 4 Routing Tables
 resource "aws_route_table" "terraform-route-gateway" {
   vpc_id = aws_vpc.aws-vpc.id
   route {
@@ -42,7 +42,7 @@ resource "aws_route_table" "route-nat2" {
   }
 }
 
-# Assosiate Routing Tables
+# Associate Routing Tables
 resource "aws_route_table_association" "terraform-associate1" {
   subnet_id      = aws_subnet.terraform-sub1-pub.id
   route_table_id = aws_route_table.terraform-route-gateway.id
